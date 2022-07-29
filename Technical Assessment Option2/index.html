@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="module" src="js/index.js"></script>
+    <title>Credit Card Activation</title>
+</head>
+<body>
+    <div>
+        <h1>Credit Card Activation</h1>
+    </div>
+    <div>
+        <form>
+            <div>
+                <div class="form">
+                    <label for="cardNumber" class = "label">Card Number:</label>
+                    <input type="number" id="cardNumber" class="input" oninput="if(value.length>16)value = value.slice(0,16)"><br><br>
+                </div>
+                <div>
+                    <small id = "cardNumberMsg"></small>
+                </div>
+            </div>
+            <br>
+            <div>
+                <div class="form">
+                    <label for="csv" class = "label">CSV:</label>
+                    <input type="number" id="csv" class="input" oninput="if(value.length>3)value = value.slice(0,3)"><br><br>    
+                </div>
+                <div>
+                    <small id = "csvMsg"></small>
+                </div>
+            </div>
+            <br>
+            <div>
+                <div class="form">
+                    <label for="expiryData" class = "label">Expiry Date (MMYY):</label>
+                    <input type="number" id="expiryData" class="input" oninput="if(value.length>4)value = value.slice(0,4)"><br><br>
+                </div>
+                <div>
+                    <small id = "expiryDataMsg"></small>
+                </div>
+            </div>
+            <br>
+            <div>
+                <div class="form">
+                    <label for="phoneNumber" class = "label">Phone Number:</label>
+                    <input type="number" id="phoneNumber" class="input" oninput="if(value.length>10)value = value.slice(0,10)"><br><br>
+                </div>
+                <div>
+                    <small id = "phoneNumberMsg"></small>
+                </div>
+            </div>
+            <br>
+            <div>
+                <input type="submit" id="btnActive" value="Active">
+            </div>
+            <div>
+                <p id="result"></p>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

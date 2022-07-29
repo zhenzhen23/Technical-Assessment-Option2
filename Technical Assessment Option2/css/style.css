@@ -1,0 +1,30 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  width: 45%;
+  margin:0 auto;
+  text-align: center;
+  border: 1ch solid black;
+}
+
+.error {
+  color: red;
+}
+
+.form {
+  display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.label{
+	justify-self: end;
+}
+
+.input{
+	justify-self: start;
+  margin-left: 10px;
+}
